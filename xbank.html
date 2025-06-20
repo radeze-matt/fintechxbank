@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Bank - Início</title>
+    
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+    
+
+    <style>
+ 
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .logo-text, h1, h2, h3, h4, h5 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+        }
+        
+       
+        .profile-icon-nav {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+        }
+
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        .text-danger { color: #dc3545 !important; }
+        .text-success { color: #198754 !important; }
+
+        
+        .grafico-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 200px;
+            border-left: 2px solid #eee;
+            border-bottom: 2px solid #eee;
+            padding: 10px 0 0 10px;
+        }
+
+        .barra-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 20%;
+            text-align: center;
+            height: 100%;
+            justify-content: flex-end;
+        }
+
+        .barra {
+            width: 35px;
+            background-color: #a5d8ff;
+            border-radius: 5px 5px 0 0;
+            transition: all 0.5s ease-out;
+        }
+
+        .barra-wrapper:hover .barra {
+            background-color: #4dabf7;
+        }
+
+        .barra-label {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-top: 8px;
+        }
+
+        .barra-valor {
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="#">X-Bank</a>
+            <div class="d-flex align-items-center">
+                <span class="me-2 d-none d-sm-inline">Olá, Usuário!</span>
+                <div class="profile-icon-nav">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <section class="mb-4">
+            <div class="card p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="text-muted">Saldo em conta</h5>
+                        <h2 class="display-6 fw-bold">R$ 999,00</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <div class="row">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <div class="card p-4 h-100">
+                        <h5 class="card-title mb-4">Ganhos sobre Investimentos</h5>
+                        <div class="grafico-container">
+                            <div class="barra-wrapper"><div class="barra-valor">8.5%</div><div class="barra" style="height: 65%;"></div><div class="barra-label">CDBs</div></div>
+                            <div class="barra-wrapper"><div class="barra-valor">7.2%</div><div class="barra" style="height: 52%;"></div><div class="barra-label">Tesouro</div></div>
+                            <div class="barra-wrapper"><div class="barra-valor">8.8%</div><div class="barra" style="height: 70%;"></div><div class="barra-label">LCI</div></div>
+                            <div class="barra-wrapper"><div class="barra-valor">9.1%</div><div class="barra" style="height: 80%;"></div><div class="barra-label">Fundos</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card p-4 h-100">
+                        <h5 class="card-title mb-4">Bolsa de Valores</h5>
+                        <img src="images/graficodeacoes.png" class="img-fluid rounded" alt="Gráfico da bolsa de valores">
+                        <a href="#" class="btn btn-outline-primary mt-4">Ver meus ativos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card p-4">
+                <h5 class="card-title mb-3">Extrato recente</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Seguro Cartão<span class="fw-bold text-danger">- R$ 8,99</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Pix de Elon Musk<span class="fw-bold text-success">+ R$ 10,99</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Compra Supermercado<span class="fw-bold text-danger">- R$ 189,50</span></li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Salário<span class="fw-bold text-success">+ R$ 2500,00</span></li>
+                </ul>
+                <a href="#" class="btn btn-link mt-3 text-decoration-none">Ver extrato completo</a>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

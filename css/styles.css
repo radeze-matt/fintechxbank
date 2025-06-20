@@ -1,0 +1,109 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+}
+
+    /* Logo X Bank :) */
+.logo-text, h1, h2, h3, h4, h5 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+/*LOGIN */
+.login-page {
+    /* o card na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9ecef;
+}
+
+.login-container {
+    padding: 1rem;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1f3f5;
+    border: 2px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #adb5bd;
+}
+
+/*  HOME (xbank.html) */
+.profile-icon-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #495057;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.text-danger { color: #dc3545 !important; }
+.text-success { color: #198754 !important; }
+
+/* 4. ESTILOS DO GRÁFICO DE BARRAS SIMULADO */
+.grafico-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px;
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 10px 0 0 10px;
+}
+
+.barra-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.barra {
+    width: 35px;
+    background-color: #a5d8ff;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.5s ease-out;
+}
+
+.barra-wrapper:hover .barra {
+    background-color: #4dabf7;
+}
+
+.barra-label {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 8px;
+}
+
+.barra-valor {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 5px;
+}
